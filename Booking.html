@@ -1,0 +1,121 @@
+Doctype! html>
+<html>
+<head>
+<title>creating</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Booking Form</header></h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a class="active href="destination.html">Destinations</a></li>
+<li><a href="tips.html">tips</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a href="Booking.html">Booking</a></li>
+<li><a href="About Me.html">About Me</a></li>
+</ul>
+<form id="myform">
+<fieldset>
+<legend> step1: Tourist Information </legend>
+Full name:<input type="text" name="h"><br>
+Email: <input name="email type="email" placeholder="domain.com" required><br>
+phone number:<input type="tel" name="phone" placeholder="Eg. +86" required><br>
+Nationality:<input type="text">
+</fieldset><br />
+<fieldset>
+<legend> step2: Tour Details </legend>
+Tour date: <input name="dob" type="date"><br>
+Group size:<input type="text" name="h"><br>
+Tour Duration:<select name="Duration">
+<option>Select Duration</option>
+<option value="china">China</option>
+<option value="france">France</option>
+<option value="italy">Italy</option>
+<option value="portugal">Portugal</option>
+</select><br>
+Preferred Language:
+<input type="radio" name="Language" value="Mandarin">Mandarin
+<input type="radio" name="Language" value="English">English<br>
+</fieldset>
+<fieldset>
+<legend> Step3: Places to Visit </legend>
+Select attractions:<br>
+<input type="checkbox" name="vehicle" value="Sangfang Qixiang">Sangfang Qixiang<br>
+<input type="checkbox" name="vehicle" value="Jinshan Temple">Jinshan Temple<br>
+<input type="checkbox" name="vehicle" value="West Lake Park">West Lake Park<br>
+<input type="checkbox" name="vehicle" value="Pingtan Island">Pingtan Island<br>
+Special requests: <br><br><textarea name="address" cols=30 rows=4 required></textarea>
+<input type="Submit" value="Book Tour">
+<style>
+li a.active{ /* active class as homepage */
+background-color:#4CAF50; /* green color */
+color:white;
+}
+ul {
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  width:200px;
+  background-color:#f1f1f1;
+  border:1px solid #000;  
+  overflow:hidden;
+  width:100%;
+  }
+li {
+  text-align:center;
+  border-bottom:1px solid #000;
+  float:left;
+ }
+
+li :last-child{
+  border-bottom:none;
+ }
+li a {
+  display:block;
+  color:#000;
+  padding:8px 16px;
+  text-decoration:none;
+  }
+  li a:hover{
+  background-color:#555;
+  color:white;
+  }
+  li a.active{
+  background-color:#4CAF50;
+  color:white;
+  }
+ .myslides{
+  width:100%;
+}
+form#myform {
+background:#9cbc2c;
+border-radius:10px;
+padding:20px;
+width:400px;
+}
+form#myform legend{
+color:#384313;
+font-size:18px;
+font-weight:bold;
+padding-bottom:5px;
+}
+form#myform input[type=submit] {
+background:#384313;
+border:none;
+border-radius:px;
+font:18px Georgia, "Times New Roman", Times,
+serif;
+color:#ffffff;
+padding:10px 25px;
+text-transform:uppercase
+}
+header{
+background:url("fuzhou-guide-1920.jpg");
+background-size:cover;
+color:white;
+text-align:center;
+height:230px;
+font-size:23px;
+padding:20px;
+}
+</style>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .mySlides {
+   width:100%;
+}
+</style>
+<link rel="stylesheet"href="style.css">
+</head>
+<body>
+<header>
+<h1>Gallery</h1>
+<ul>
+<li><a class="active" href="index.html">Home</a></li>
+<li><a href="Destination.html">Destination</a></li>
+<li><a href="Tips.html">Tips</a></li>
+<li><a href="Gallery.html">Gallery</a></li>
+<li><a href="Booking.html">Booking</a></li>
+<li><a href="About me.html">About me</a></li>
+</ul>
+<img class ="mySlides" src="nature1.jpeg">
+<img class ="mySlides" src="nature2.jpeg">
+<img class ="mySlides" src="nature3.jpeg">
+<img class ="mySlides" src="nature4.jpeg">
+<script>
+var slideIndex = 0;
+show();
+
+function show(){
+var i;
+var x = document.getElementsByClassName("mySlides");
+for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none";
+ }
+slideIndex++;
+if (slideIndex > x.length) {
+slideIndex = 1
+ }
+x[slideIndex-1].style.display = "block";
+setTimeout(show,2500); // Change image every 2500 milliseconds
+ }
+</script>
+<footer><p>@2025 JJ Blog</p></footer>
+</body>
+</html>
